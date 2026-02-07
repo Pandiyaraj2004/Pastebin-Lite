@@ -69,7 +69,7 @@ Create a file named `.env.local` in the root folder:
 UPSTASH_REDIS_REST_URL="your_upstash_redis_url"
 UPSTASH_REDIS_REST_TOKEN="your_upstash_redis_token"
 NEXT_PUBLIC_BASE_URL="http://localhost:3000"
-TEST_MODE=0
+TEST_MODE=1
 ```
 
 * `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` are for Upstash.
