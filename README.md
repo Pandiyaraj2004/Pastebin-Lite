@@ -168,6 +168,3 @@ MIT License © 2026 Pandiyaraj
 
 ---
 
-If you want, I can also help you **add screenshots and badges** (like GitHub, Vercel, Redis) to make the README even more visually polished. 👩‍💻💡
-::contentReference[oaicite:0]{index=0}
-```
