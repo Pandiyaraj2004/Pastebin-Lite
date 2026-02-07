@@ -26,7 +26,9 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 flex items-center justify-center p-4 sm:p-6">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 flex items-center justify-center p-4 sm:p-6 relative">
+
+      {/* Main card */}
       <div className="bg-white shadow-2xl rounded-3xl p-6 sm:p-10 w-full max-w-md sm:max-w-lg border border-gray-200">
         
         <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 sm:mb-8 text-gray-900 flex items-center justify-center gap-2">
@@ -77,6 +79,12 @@ export default function Home() {
           </div>
         )}
       </div>
+
+      {/* Floating bottom-right badge */}
+      <div className="fixed bottom-1 right-4 sm:bottom-6 sm:right-6 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full shadow-md text-gray-700 text-sm flex items-center gap-1 select-none z-50">
+        🚀 Built by Pandiyaraj
+      </div>
+
     </div>
   );
 }
