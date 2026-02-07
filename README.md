@@ -74,7 +74,7 @@ TEST_MODE=0
 
 * `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` are for Upstash.
 * `NEXT_PUBLIC_BASE_URL` is your local host during dev.
-* `TEST_MODE=0` ensures real Redis storage (not in‑memory).
+* `TEST_MODE=1` ensures real Redis storage (not in‑memory).
 
 ---
 
