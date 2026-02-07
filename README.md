@@ -1,36 +1,173 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Pastebin Lite
 
-## Getting Started
+**Pastebin Lite** is a lightweight pastebin web application built with modern web technologies.  
+It allows users to create and share text pastes with optional expiration and view limits.
 
-First, run the development server:
+🔗 **Live Demo:** https://pastebin‑lite‑gules‑theta.vercel.app/  
+
+📦 **Source Code:** https://github.com/Pandiyaraj2004/Pastebin‑Lite
+
+---
+
+## 🧠 What This Project Does
+
+Pastebin Lite lets users:
+
+- 📝 Create a text paste
+- ⏱️ Set a custom **TTL** (time to live, in seconds)
+- 👁️ Limit the number of **views**
+- 🔗 Get a shareable paste link
+- 📱 Works on both **mobile** and **desktop**
+
+There is also a **“Built by Pandiyaraj 🚀” badge** showing credit on the UI.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | Next.js (React) |
+| Styling | Tailwind CSS |
+| Storage | Upstash Redis (Serverless Redis) |
+| Deployment | Vercel |
+
+Your app uses **serverless architecture** with Upstash Redis for persistent paste storage and Vercel for deployment.
+
+---
+
+## 📌 Key Features
+
+- Responsive UI with a clean design
+- Paste creation with customizable TTL and view limits
+- Persistent backend storage via Redis (Upstash)
+- Live app deployed on **Vercel**
+- Modern stack (React + Next.js + Tailwind)
+- Clear credit shown in UI
+
+---
+
+## 🚀 How to Run Locally
+
+### 1. **Clone the repository**
+```bash
+git clone https://github.com/Pandiyaraj2004/Pastebin‑Lite.git
+cd Pastebin‑Lite
+````
+
+### 2. **Install dependencies**
+
+```bash
+npm install
+```
+
+### 3. **Set up environment variables**
+
+Create a file named `.env.local` in the root folder:
+
+```env
+UPSTASH_REDIS_REST_URL="your_upstash_redis_url"
+UPSTASH_REDIS_REST_TOKEN="your_upstash_redis_token"
+NEXT_PUBLIC_BASE_URL="http://localhost:3000"
+TEST_MODE=0
+```
+
+* `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` are for Upstash.
+* `NEXT_PUBLIC_BASE_URL` is your local host during dev.
+* `TEST_MODE=0` ensures real Redis storage (not in‑memory).
+
+---
+
+## 🧪 Run in Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build for Production
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Deployment on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your project to GitHub
+2. Import repository in **Vercel**
+3. Set environment variables on Vercel dashboard:
 
-## Deploy on Vercel
+   * `UPSTASH_REDIS_REST_URL`
+   * `UPSTASH_REDIS_REST_TOKEN`
+   * `NEXT_PUBLIC_BASE_URL` (e.g., `https://pastebin‑lite‑gules‑theta.vercel.app`)
+   * `TEST_MODE=1`
+4. Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Your live paste links will now be persistent and work even after redeploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🏗️ Project Structure
+
+```
+Pastebin‑Lite/
+├─ app/               # Next.js pages and components
+├─ lib/               # Redis / helper logic
+├─ public/            # Static assets (images, icons)
+├─ app/api/pastes/    # API routes
+├─ .env.local         # Environment variables (local only)
+├─ package.json       # Dependencies and scripts
+└─ README.md          # Project documentation
+```
+
+---
+
+## 👨‍💻 About the Author
+
+**Pandiyaraj** — Full Stack Developer
+
+* GitHub: https://github.com/Pandiyaraj2004
+* Contact: *pandiyaraja409@gmail.com*
+
+---
+
+## 📈 Future Enhancements
+
+Here are ideas you could add later:
+
+* ✔ Copy‑to‑clipboard button for paste links
+* ✔ Syntax highlighting for code pastes
+* ✔ Optional login/authentication
+* ✔ Public feed of pastes
+* ✔ Custom paste titles
+
+---
+
+## 📜 License
+
+MIT License © 2026 Pandiyaraj
+
+```
+
+---
+
+### 📌 Why this README is effective
+
+✅ Starts with a **descriptive title and live demo link**  
+✅ Clearly explains **what the project does** and **how it works**  
+✅ Lists **tech stack and key features**  
+✅ Shows **how to run locally** and also **deploy on Vercel**  
+✅ Provides **project structure** — useful for recruiters  
+✅ Mentions **future enhancements** — shows initiative  
+
+---
+
+If you want, I can also help you **add screenshots and badges** (like GitHub, Vercel, Redis) to make the README even more visually polished. 👩‍💻💡
+::contentReference[oaicite:0]{index=0}
+```
